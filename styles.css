@@ -1,0 +1,130 @@
+.containerone{
+    display: grid;
+    grid-template-columns: repeat(5, 3fr); /*number and sizes of rows and collumns (3columns)*/
+    grid-template-rows: repeat(2 , 200px);
+  /* grid-template: repeat(2, 100px) / repeat(4 , 1fr);*/
+    gap: 10px 50px ; /*makes space btwn rows and collomns */
+ 
+    grid-auto-rows: 60px auto 100px;
+
+
+
+   grid-template-areas: ". header header header."
+                         ". menu menu content."
+                         ". footer footer footer ." ;
+                              
+
+    background-color: #85CDFD;
+    padding: 12px;
+    
+}
+.header{
+    background-color: blueviolet;
+    grid-area: header; 
+}
+
+.menu{
+    background-color: seagreen;
+    grid-area: menu;
+}
+
+.content{
+    grid-area: content;
+    background-color: darkblue;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: gold;
+}
+
+
+
+.one{
+ 
+    background-color: #1c4155;
+    text-align: center;
+    color: #DEFCF9;
+    border: solid rgb(255, 255, 246);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    display: grid;
+    grid-auto-rows: 30px;
+    padding: 10px;
+    background-color: #F1C27B;
+    grid-template-columns: auto auto;
+   
+   border-radius: 10px;
+   
+   gap: 30px 30px;
+   
+  p{
+       font-size: 50px;
+       font-family: sans-serif;
+    
+
+  }
+  body{
+
+    background-color:#DEFCF9 ;
+  
+
+
+
+
+  }
+ .pw{
+   
+   background: #85A389;
+   text-align: center;
+   font-family: Tahoma, Verdana, Segoe, sans-serif;
+  
+ }
+ .lay{
+   color: #000000 ;
+   background:#F1C27B ;
+   text-align: center;
+   border-radius: 30px;
+   font-family: Tahoma, Verdana, Segoe, sans-serif;
+ }
+ .tw{
+
+     background-color:#85A389 ;
+   text-align: center;
+   animation: spin s linear infinite;
+   font-family:Tahoma, Verdana, Segoe, sans-serif ;
+
+   margin: 50px;
+   gap: 50px 50px;
+ } 
+ @keyframes spin{
+   0%{
+     transform: rotate(0deg);
+   }
+   100%{
+     transform: rotate(360deg);
+   }
+ }
